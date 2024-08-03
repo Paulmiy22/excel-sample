@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<title> Export HTML to EXCEL, CCS, PDF </title>
+
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="This">
+     
+     
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/twitter-bootstrap.min.css">
+      
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css">
+
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script> 
+
+
+<script src="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js"></script> 
+<script src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.flash.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script> 
+<script src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.html5.min.js"></script> 
+<script src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.print.min.js"></script>
+    
+<script type="text/javascript">
+    $(document).ready(function() 
+    { 
+        $('#example').DataTable( 
+        { 
+            dom: 'Blfrtip',
+        } );
+    
+    } );
+    </script>
+
+</head>
+<body>
+    
+<div class="container">
+</div><div style="padding:50px;"></div>
+    <div class="text-center"
+              <h1> HTML Datatable - Export To EXCEL | CCS| PDF </h1>
+              <br>
+              
+</div> 
+<br>
+
+<table id="example" class="display nowrop" style="width:100%">
+    <thead>
+       <tr>
+       <th class="sortable" onclick="sortTable(6)">NAME</th>
+       <th class="sortable" onclick="sortTable(1)">INFO</th>
+       <style>
+        
+       </style>
+            
+     </tr>
+     </thead>
+
+</body>
+    
+     <style>
+        table {
+            width: 1000%; 
+            
+            
+    border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 5px;
+        
+
+        }
+        th {
+            background-color: #e5eaf3;
+        }
+        .sortable:hover {
+            cursor: pointer;
+            background-color: #69ed93;
+        }
+        h1 {text-align: center;}
+    </style>
+    
+    <br></br>
+ 
+     
+       
+        <tbody>
+            <tr>
+                <td>Aaron, S(amuel) Franke</td>
+                <td>Aaron, S(amuel) Frank, 23 S. 34th St, J, Philadelphia, Pa. Entomology. Mt. Holly, N. J, 
+March 5, 62. Common schools. Jesup scholar, 
+Acad. Nat. Sciences, Phila, 83-84, custodian in- 
+sects, 84-85; econ. entomologist, Phila. Com- 
+mercial Mus, 96- Psocidse; Pseudoneuroptera ; 
+Hymenoptera; Lepidoptera; general and eco- 
+nomic entomology; trees. Popular entomology; 
+the black ant; parasites of wood-boring beetles; 
+forestry.</td>
+                
+            </tr>
+
+
+
+
+
+            <tr>
+                <td>Abbe, Prof. Cleveland</td>
+                <td>Abbe, Prof. Cleveland, 2017 I St, N. Washing- 
+ton, D. C. *Meteorology. New York, N. Y, Dec. 
+3, 38. A.B, Col. City of N. Y, 57, A.M, 60; B.S, 
+Harvard, as of 64. Tutor math, Trinity Sch, 
+N. Y, 57-58; asst. prof, eng, Mich. Agr. 
+Col, 59 ; tutor eng, Michigan, 51M50 ; aid astron, 
+U. S. Coast Surv, and with B. A. Gould at Cam- 
+bridge, 60-64; resident, Poulkova Observatory, 
+65-66; aid, U. S. Naval Observatory, 67-68; 
+director, Cincinnati Observatory, 68-73 ; prof, 
+meteorol. and civilian asst, office of chief signal 
+officer, U. S. A, 71-91; prof, meteorol, George 
+Washington, 86-; prof, V. S. Weather Bur, 91-; 
+lecturer, Hopkins, 96- Ed, ' Monthly Weather 
+Rev'; chairman, Committee on Meteorol, Car- 
+negie Inst, 02. Officier d'Acad, 89; hon. Ph.D, 
+Col. City of N. Y, 91; LL.D, Michigan, 88; 
+Glasgow, 96. Delegate, Am. Forestry Cong, 
+Cincinnati, 82; Elec. Cong, Phila, 84; Int. 
+Meridian and Time Standard Cong, 84; Int. 
+Meteorol. Cong, Munich, 91; Int. Cong. Physi- 
+cists, Paris, 00. Nat. Acad; F.A.A. (v. pres, 
+90) ; Math. Soe; Astron. and Astrophys. Soc; 
+Physical Soc; Metrol. Soc; Geog. Ass; assoc. 
+mem. Elec. Eng; cor. mem. Am. Geog. Soc; 
+Nat. Geog. Soc; Forestry Ass; Am. Hist. Ass; 
+Philos. Soc; assoc. fel. Am. Acad; New Eng. 
+Meteor. Soc; Wash. Acad; cor. mem. N. Y. 
+Acad; Boston Soc. 
+Abbe, Cleveland, Jr, U. S. </td>
+                
+            </tr>
+
+
+
+
+            <tr>
+                <td>Abbe, Cleveland</td>
+                <td>Abbe, Cleveland, Jr, U. S. Geological Survey, 
+
+Washington, D. C. Geography, Geology. 
+
+Washington, March 25, 72. A.B, Harvard, 94, 
+
+A.M, 96; Ph.D, Hopkins, 98; Vienna and Paris, </td>
+
+
+
+
+
+            </tr>
+                
+               <tr>
+                <td>Abbot, C(harles) G(reeley)</td>
+                <td>Abbot, C(harles) G(reeley), 36 Q St, N. E, 
+Washington, D. C. * Astrophysics. Wilton, N. 
+H, May 31, 72. B.S, Mass. Inst. Tech, 94, M.S, 
+95. Asst, Smithsonian Astrophys. Observatory, 
+95-96, aid, acting in charge, 96- F.A.A ; Astron. 
+and Astrophys. Soc; Wash. Philos. Soc. Infra- 
+red solar spectrum; sensitive galvanometer; os- 
+motic pressure. Solar physics; absolute re- 
+cording pyr-heliometer.  </td>
+            </tr>
+
+
+
+
+
+
+              <tr>
+                <td>Abbot, Gen. Henry L(arcom)</td>
+                <td>Abbot, Gen. Henry L(arcom), U. S. A. (retired), 
+23 Berkeley St, Cambridge, Mass. Engineering, 
+Physics. Beverly, Mass, Aug. 13, 31. Grad, U. 
+S. Mil. Acad, 54. All grades from second lieut. 
+to col, Corps Engineers, U. S. A, 54-95 (retired 
+by law). Col, brevet brig, and maj. gen, U. S. 
+Vols; chairman, Group XVI, Centennial Expos, 
+76; Higher Jury of Awards, Atlanta Expos, 95; 
+pres, Board of Consulting Engineers, Pittsburg 
+and Lake Erie Canal, 95-96; mem. Int. Com- 
+mission Engineers, New Panama Canal Co, 97- 
+00, consulting engineer, 00-04 ; mem. many 
+govt, boards. LL.D, Harvard, 86. Nat. Acad 
+Philos. Soc; Am. Acad; New Orleans Acad 
+cor. mem. Austrian Imperial Royal Geol. Soc 
+River and harbor improvements ; coast defence 
+submarine mining; explosives; electricity; ver 
+tical fire; astronomy; canals; river hydraulics 
+climatology of the Isthmus of Panama. The 
+Chagres River; the Panama Canal. </td>
+            </tr>
+
+
+
+
+
+
+              <tr>
+                <td>Abbott, Dr. Albert H (olden)</td>
+                <td>Abbott, Dr. Albert H (olden), University College, 
+Toronto. Can. Psychology. Brockville, Ont, 
+Dec. 7, 71. A.B, Toronto, 95; Ph.D. Wiirzburg, 
+04. Asst, Psychol. Lab, Toronto, 95-99, instr. 
+philos, 99-00, lecturer philos. and asst, Psychol. 
+ </td>
+            </tr>
+
+
+
+
+              <tr>
+                <td>Abbott, Dr. A(lexander) C(rever),</td>
+                <td>Abbott, Dr. A(lexander) C(rever), 4229 Baltimore 
+Ave, Philadelphia, Pa. *Hygiene, Bacteriology. 
+Baltimore, Md, Feb. 26, GO*. Baltimore City 
+Col, 77; M.D, Maryland, 84; Hopkins, 84- 
+87; Munich, 87-S8; "Berlin, 88-89. Asst. hy- 
+giene and bacter, Hopkins, 89-91 ; asst. in 
+charge, Lab. of Hygiene, Pennsylvania, 91-96, 
+prof, hygiene and bacter. and director, Lab. of 
+Hygiene, 91-; director, Div. Path, Bacter. and 
+Disinfection, Bur. of Health, Phila, 97; chief, 
+Bur. of Health, and pres, Board of Health, 02- 
+F.A.A; Ass. Path, and Bact; Soc. Bact; Am. 
+Physicians; Physiol. Soc; Soc. Exp. Biol, and 
+Med; Am. Med. Ass; Pub. Health Ass; Philos. 
+Soc; Wash. Acad; Phila. Co. Med. Soc; Phila. 
+Path. Soc; fel. Phila. Col. Physicians. Bac- 
+teriology and preventive medicine. Certain 
+phases of infection, intoxication and immunity. </td>
+            </tr>
+
+
+
+
+
+              <tr>
+                <td>Abbott, Dr. C(harles) C(onrad),</td>
+                <td>Abbott, Dr. C(harles) C(onrad), Trenton, N. J. 
+Zoology, Archeology. Trenton, June 4, 43. M.D, 
+Pennsylvania, 65. Asst, Peabody Mus, Harvard, 
+76-89. Philos. Soc; Boston Soc. Nat. Hist; fel. 
+Copenhagen Soc. of Antiquaries of the North. 
+Primitive industry; natural science. Animal 
+intelligence; evidences of the antiquity of man 
+in the valley of the Delaware Piver.  </td>
+            </tr>
+
+
+
+              <tr>
+                <td>Abbott, Prof. J(ames) F(rancis)</td>
+                <td>Abbott, Prof. J(ames) F(rancis), Washington 
+University, St. Louis, Mo. Zoology. Greeley, 
+Colo, Sept. 27, 76. A.B, Stanford, 99; fellow, 
+Chicago, 03-04; A.M, Stanford, 04. Instr. Eng- 
+lish, Shigaken Shogyo Gakko, Japan, 00-01; 
+prof. English lang, Imp. Naval Col, Etajiina, 
+Japan, 01-03; asst. prof, zool, Washington (St. 
+Louis), and assoc. prof, embryol, Med. Sch, 0.J 
+Faunal ichthyology: ctenophore morphology. 
+Formative and trophic influences in avian em- 
+bryology; tropisms in pathogenic bacteria.  </td>
+            </tr>
+
+
+
+
+              <tr>
+                <td>Abel, Prof. John J(acob)</td>
+                <td>Abel, Prof. John J(acob), Station L, Baltimore, 
+Md. * Pharmacology, Physiological chemistry. 
+Cleveland, O, May 19, 57. Ph.B, Michigan, 83; 
+Hopkins. 83-84; European universities, 84-90; 
+M.D, Strasburg. 88. Principal, High Sch, La 
+Porte, Ind, 79-80, supt. pub. schools, 80-82; 
+lecturer mat. med. and therapeut, Michigan, 90- 
+91, prof, 91-93; pharmacol, Hopkins, 93- Hon. 
+A.M, Michigan, 03. F.A.A; Physiol. Soc; 
+Am. Physicians; Therapeut. Soc; Chem. Soc; 
+Soc. Exp. Biol, and Med. Composition of ani- 
+mal tissues and fluids; function and isolation 
+of special chemical principles of the animal 
+organism; ethyl sulphid; carbamic acid; pig- 
+ment of negro's* skin. The chemical nature of 
+the blood-pressure-raising constituent of the 
+suprarenal capsules.  </td>
+            </tr>
+
+
+
+              <tr>
+                <td>Abrams, L(e)R(oy)</td>
+                <td>Abrams, L(e)R(oy), U. S. National Museum, 
+Washington, D. C. Botany. Sheffield, la, Oct. 
+1, 74. A.B, Stanford, 99, A.M, 02; fellow, 
+Columbia, 04-05. Acting prof, bot, Idaho, 99- 
+00; asst. syst. bot, Stanford, 00-03, instr, 03- 
+04; asst. curator, Div. Plants, U. S. Wat. Mus, 
+05- M.A.A; Nat. Geog. Soc; Wash. Bot. Soc; 
+Wash. Biol. Soc; Torrey Bot. Club. Flora of 
+southern California. </td>
+
+            
+
+
+
+
+
+
+<tr>
+                <td>Adams, Alton Dermont</td>
+                <td>Adams, Alton Dermont, P. O. Box 478, Worcester, 
+Mass. Electrical engineering. Biddeford, Me, 
+June 28, 64. B.S, Harvard, 97, A.M, 03. Con- 
+structing elec. engineer, 86-95; consulting en- 
+gineer, 95- Elec. Eng. Electrical supply; cost 
+of gas and electrical supply. 
+
+Adams, Cha(rle)s C(hristopher), University of 
+Michigan, Ann Arbor, Mich. Zoology. Clinton, 
+ </td>
+
+
+
+
+
+
+<tr>
+                <td>Adams, Prof. C(harles) F(rederick)</td>
+                <td>Adams, Prof. C(harles) F(rederick), University of 
+Arkansas, Fayetteville, Ark. Entomology, Zo- 
+ology. Atherton, Mo, April 4, 77. B.Agr, Mis- 
+souri, 97; M.D, Kansas, 02, A.M, 03; Chicago, 
+04-05. Asst. entom, Missouri, 97; prof, histol. 
+and bacter, Kansas City Dental Col, 00-04; 
+asst. zool, Chicago, 04-05 ; prof, entom, Arkan- 
+sas, 05- M.A.A. Insect taxonomy. Insect his- 
+tology and cytology; insect bionomics.  </td>
+</tr>
+</tbody>
+</table>
+    
+
+
+    
+</body>
+</html>
